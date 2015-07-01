@@ -50,7 +50,7 @@ function Tarifa(tipo,peso){
 	return monto;
 }
 
-function calcula(peso,largo,ancho,alto)
+function calcula(peso,largo,ancho,alto,tagAvion,tagBarco)
 {
 	var e=0;
 	var lar = (largo);

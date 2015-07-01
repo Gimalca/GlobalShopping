@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="calculadora.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Calcule el Peso y el Volumen de su Envio</h2>                                                                                      
+  <div class="table-responsive">  
+  <form enctype="multipart/form-data" name="calculadora">        
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>Largo (pulgadas)</td>
+        <td><input name="largo" class="bot" onBlur="javascript:validarCampoNumero(this);"></td>
+        <td> Ingresa  medidas en pulgadas y  peso en libras.</td>
+      </tr>
+      <tr>
+        <td>Ancho (pulgadas)</td>
+        <td><input name="ancho" class="bot" onBlur="javascript:validarCampoNumero(this);"></td>
+        <td>Representado en Pulgadas</td>
+      </tr>
+      <tr>
+        <td>Alto (pulgadas)</td>
+        <td><input name="alto" class="bot" onBlur="javascript:validarCampoNumero(this);"></td>
+        <td>Representado en Pulgadas</td>
+      </tr>
+      <tr>
+        <td>Peso en Libras</td>
+        <td><input name="peso" class="bot" onBlur="javascript:validarCampoNumero(this);"></td>
+        <td>1 Kilogramo=2.2046 Libras, 1 Cent&iacute;metro= 0.39 Pulgadas</td>
+      </tr>
+      <tr>
+        <td>V&iacute;a A&eacute;rea : </td>
+        <td><input size="60%" class="imp" readonly name="avion" style="border:none"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>V&iacute;a Mar&iacute;tima:</td>
+        <td><input size="60%"  class="imp" readonly name="barco" style="border:none"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input onclick="javascript:calcula(document.forms['calculadora']['peso'].value,document.forms['calculadora']['largo'].value,document.forms['calculadora']['ancho'].value,document.forms['calculadora']['alto'].value,document.forms['calculadora']['avion'],document.forms['calculadora']['barco']);" name="Calcular" value="Calcular" type="button"></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>

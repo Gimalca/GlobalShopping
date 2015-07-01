@@ -6,6 +6,7 @@
 		<title><?php wp_title('|', true, 'right'); ?></title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/scripts/calculadora.js"></script>
 		
 		<?php global $smof_data; ?>
 		
