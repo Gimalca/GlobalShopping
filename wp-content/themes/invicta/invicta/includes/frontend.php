@@ -303,7 +303,7 @@ if ( ! function_exists( 'invicta_header_meta_bar' ) ) {
 			if ( $smof_data['header-meta_bar_searchbox'] ) {
 			
 				echo 		'<div class="searchbox">';
-				echo 			'<a href="http://globalshopping.com.ve/Login.aspx"><button type="button" style="background-color: #fda255;border: 0;border-radius: 5px;color: white;">Iniciar Sesion</button></a>';
+				echo 			'<a href="http://globalshopping.com.ve/Login.aspx" class="inicio_sesion">&nbsp;&nbsp; Iniciar Sesion &nbsp;&nbsp;</a>';
 				echo 		'</div>';
 				
 			}
